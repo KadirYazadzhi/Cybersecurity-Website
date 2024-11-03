@@ -1,0 +1,19 @@
+.tool svg {
+    width: 70px;
+    height: 70px;
+    fill: var(--text-color);
+}
+
+.tool {
+    width: 100px;
+    height: 100px;
+}
+
+.tool-card {
+    gap: 10px;
+}
+
+.tool-text {
+    text-wrap: wrap;
+    text-align: center;
+}
