@@ -1,4 +1,4 @@
-.tool svg {
+.tool svg, .tool img {
     width: 70px;
     height: 70px;
     fill: var(--text-color);

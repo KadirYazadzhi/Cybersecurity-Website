@@ -234,6 +234,6 @@ video {
   row-gap: 1.75rem;
   max-width: 50rem;
 }
-.information, .about-me, .tools {
+.information, .about-me, .tools, .language {
     text-align: center;
 }
