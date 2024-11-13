@@ -1,7 +1,11 @@
+.courses-slider {
+    margin-bottom: 15px;
+}
+
 .course-card {
     text-align: left;
     justify-content: left;
-    align-items: flex-start;
+    align-items: center;
     opacity: 0.7;
     width: 100%;
 }

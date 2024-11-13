@@ -2,7 +2,7 @@ var glide = new Glide('.glide', {
     type: 'carousel',
     perView: 3.5,
     focusAt: 0,
-    autoplay: 3000,
+    autoplay: 4000,
     breakpoints: {
         800: {
             perView: 2
@@ -15,6 +15,22 @@ var glide = new Glide('.glide', {
 
 // Mount the Glide instance
 glide.mount();
+
+var toolsSlider = new Glide('.tools-slider', {
+    type: 'carousel',
+    perView: 3,
+    focusAt: 0,
+    breakpoints: {
+        800: {
+            perView: 2
+        },
+        480: {
+            perView: 1
+        }
+    }
+});
+
+toolsSlider.mount();
 
 // Select all cards
 const cards = document.querySelectorAll('.course-card');

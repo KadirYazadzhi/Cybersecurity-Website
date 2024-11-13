@@ -11,9 +11,19 @@
 
 .tool-card {
     gap: 10px;
+    width: 100%;
 }
 
 .tool-text {
     text-wrap: wrap;
     text-align: center;
+}
+
+
+.glide__bullet {
+    border: 1px solid var(--text-color);
+    width: 10px;
+    height: 10px;
+    background: var(--text-color);
+    border-radius: 50%;
 }
