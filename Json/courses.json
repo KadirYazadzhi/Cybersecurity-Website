@@ -1,0 +1,62 @@
+[
+  {
+    "category": "Programming",
+    "image": "Image/Courses-Image/Programming Basics with C++.svg",
+    "title": "Programming Basics with C++",
+    "description": "Course introduces foundational programming concepts using the C++ language.",
+    "location": "Software University",
+    "duration": "5 weeks",
+    "difficulty": "Easy",
+    "iconType": "fa-battery-quarter",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "category": "Programming",
+    "image": "Image/Courses-Image/Fundamentals with C++.svg",
+    "title": "C++ Fundamentals",
+    "description": "Course covers essential programming principles and techniques using C++.",
+    "location": "Software University",
+    "duration": "6 weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "category": "Programming",
+    "image": "Image/Courses-Image/Advanced with C++.svg",
+    "title": "C++ Advanced",
+    "description": "Course dives into complex programming concepts and advanced techniques.",
+    "location": "Software University",
+    "duration": "5 weeks",
+    "difficulty": "Hard",
+    "iconType": "fa-battery-three-quarters",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "category": "Programming",
+    "image": "Image/Courses-Image/C++ OOP.svg",
+    "title": "C++ OOP",
+    "description": "Course focuses on object-oriented programming principles.",
+    "location": "Software University",
+    "duration": "9 weeks",
+    "difficulty": "Very Hard",
+    "iconType": "fa-battery-full",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  }
+]
