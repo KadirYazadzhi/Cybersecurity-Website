@@ -1,4 +1,4 @@
-class CourseLoader {
+class SlideLoader {
     constructor(jsonPath, containerId, glideSelector) {
         this.jsonPath = jsonPath;
         this.containerId = containerId;
@@ -107,6 +107,6 @@ class CourseLoader {
 
 // Instantiate and run the CourseLoader
 document.addEventListener('DOMContentLoaded', () => {
-    const courseLoader = new CourseLoader('Json/courses.json', 'courses', '.glide');
+    const courseLoader = new SlideLoader('Json/courses.json', 'courses', '.glide');
     courseLoader.load();
 });

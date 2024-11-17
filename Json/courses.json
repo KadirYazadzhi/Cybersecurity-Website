@@ -9,10 +9,10 @@
     "difficulty": "Easy",
     "iconType": "fa-battery-quarter",
     "certificate": "With Certificate",
-    "moreDescription": "",
-    "price": "",
-    "certificateImage": "",
-    "topics": ""
+    "moreDescription": "The Programming Basics with C++ course provides essential programming skills required for all tech specialties at SoftUni. It focuses on beginner-level coding, utilizing an Integrated Development Environment (IDE), and foundational concepts such as variables, data types, operators, expressions, input/output operations, conditional statements (if, if-else), and loops (for, while).",
+    "price": "Free",
+    "certificateImage": "https://kadiryazadzhi.github.io/portfolio/Image/Certificate/C++/C++%20Basic.png",
+    "topics": "1. Course Resources\n 2. Introduction to Programming\n 3. Exercise: Getting Started with Programming\n 4. Conditional Statements\n 5. Exercise: Conditional Statements\n 6. Advanced Logical Checks\n 7. Exercise: Advanced Logical Checks\n 8. For Loops\n 9. Exercise: For Loops"
   },
   {
     "category": "Programming",
