@@ -54,3 +54,14 @@
     text-align: center;
     padding: 0 10%;
 }
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+
+    .cards {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

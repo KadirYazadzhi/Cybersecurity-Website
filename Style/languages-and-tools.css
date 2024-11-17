@@ -33,3 +33,15 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 800px) {
+    .my-language-and-tools {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .small-box {
+        width: 20%;
+        height: 70px;
+    }
+}

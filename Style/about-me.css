@@ -64,3 +64,15 @@
     width: 40%;
     margin-top: 20px;
 }
+
+@media (max-width: 800px) {
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .more-about-me, .diagrams {
+        width: 100%;
+        gap: 10px;
+    }
+}
