@@ -106,3 +106,22 @@ The website is ready to use. Navigate through the pages, explore the cards, and 
 - **Custom Labs**: Create and share your own cybersecurity scenarios.
 
 
+
+## 💬 Feedback & Contribution
+
+Contributions and feedback are welcome!
+
+- 💡 Have ideas for improvement? Open an issue.
+- 🛠️ Want to contribute? Submit a pull request.
+
+
+## 👨‍💻 Author
+
+If you have any questions or suggestions, feel free to reach out at:
+
+- 📧 Email: kadiryazadzhi@gmail.com
+- 🌐 Portfolio: [Kadir Yazadzhi](https://kadiryazadzhi.github.io/portfolio/)
+
+---
+
+⭐ If you found this project helpful, please give it a star!
