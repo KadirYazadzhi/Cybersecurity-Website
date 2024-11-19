@@ -56,7 +56,7 @@ No back-end or database setup required. Simply ensure you have a modern browser 
    git clone https://github.com/your-username/cybersecurity-website.git
    cd cybersecurity-website
    ```  
-2. Open index.html:
+2. **Open index.html**:
 Use any browser to open the ```index.html``` file.
 3. Enjoy!
 The website is ready to use. Navigate through the pages, explore the cards, and try the interactive sliders.
