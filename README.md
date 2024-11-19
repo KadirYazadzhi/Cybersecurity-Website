@@ -53,7 +53,7 @@ No back-end or database setup required. Simply ensure you have a modern browser 
 ### Running the Website Locally  
 1. **Clone the Repository**:  
    ```bash
-   git clone https://github.com/your-username/cybersecurity-website.git
+   git clone https://github.com/KadirYazadzhi/Cybersecurity-Website.git
    cd cybersecurity-website
    ```  
 2. **Open index.html**:
