@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "category": "Programming",
     "image": "Image/Courses-Image/Programming Basics with C++.svg",
     "title": "Programming Basics with C++",
@@ -15,6 +16,7 @@
     "topics": "1. Course Resources\n 2. Introduction to Programming\n 3. Exercise: Getting Started with Programming\n 4. Conditional Statements\n 5. Exercise: Conditional Statements\n 6. Advanced Logical Checks\n 7. Exercise: Advanced Logical Checks\n 8. For Loops\n 9. Exercise: For Loops"
   },
   {
+    "id": 2,
     "category": "Programming",
     "image": "Image/Courses-Image/TypeScript.svg",
     "title": "TypeScript",
@@ -30,6 +32,23 @@
     "topics": ""
   },
   {
+    "id": 3,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Data%20Structures%20Fundamentals%20(with%20C%23).svg",
+    "title": "Data Structures Fundamentals",
+    "description": "This course introduces the core principles of data structures.",
+    "location": "Software University",
+    "duration": "5 weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 4,
     "category": "Cybersecurity",
     "image": "Image/Courses-Image/Bug Bounty Hunter - HTB.svg",
     "title": "Bug Bounty Hunter",
@@ -45,6 +64,7 @@
     "topics": ""
   },
   {
+    "id": 5,
     "category": "Programming",
     "image": "Image/Courses-Image/Programming Basics with Python.svg",
     "title": "Programming Basics with Python",
@@ -60,6 +80,23 @@
     "topics": ""
   },
   {
+    "id": 6,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Data%20Structures%20Advanced%20(with%20C%23).svg",
+    "title": "Data Structures Advanced",
+    "description": "Dive deeper into data structures with this advanced course",
+    "location": "Software University",
+    "duration": "5 weeks",
+    "difficulty": "Hard",
+    "iconType": "fa-battery-three-quarters",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 7,
     "category": "Programming",
     "image": "Image/Courses-Image/MySQL.svg",
     "title": "MySQL",
@@ -75,6 +112,7 @@
     "topics": ""
   },
   {
+    "id": 8,
     "category": "Programming",
     "image": "Image/Courses-Image/Programming%20Basics%20with%20C%23.svg",
     "title": "Programming Basics with C#",
@@ -90,6 +128,7 @@
     "topics": ""
   },
   {
+    "id": 9,
     "category": "Programming",
     "image": "Image/Courses-Image/Fundamentals with C++.svg",
     "title": "C++ Fundamentals",
@@ -105,6 +144,7 @@
     "topics": ""
   },
   {
+    "id": 10,
     "category": "Programming",
     "image": "Image/Courses-Image/C%23%20Fundamentals.svg",
     "title": "C# Fundamentals",
@@ -120,6 +160,7 @@
     "topics": ""
   },
   {
+    "id": 11,
     "category": "Programming",
     "image": "Image/Courses-Image/Advanced with C++.svg",
     "title": "C++ Advanced",
@@ -135,6 +176,7 @@
     "topics": ""
   },
   {
+    "id": 12,
     "category": "Programming",
     "image": "Image/Courses-Image/C%23%20Advanced.svg",
     "title": "C# Advanced",
@@ -150,6 +192,7 @@
     "topics": ""
   },
   {
+    "id": 13,
     "category": "Cybersecurity",
     "image": "Image/Courses-Image/Penetration Tester - HTB.svg",
     "title": "Penetration Tester",
@@ -165,6 +208,7 @@
     "topics": ""
   },
   {
+    "id": 14,
     "category": "Programming",
     "image": "Image/Courses-Image/C++ OOP.svg",
     "title": "C++ OOP",
@@ -180,6 +224,39 @@
     "topics": ""
   },
   {
+    "id": 15,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Algorithms%20Fundamentals%20with%20C%23.svg",
+    "title": "Algorithms Fundamentals with C#",
+    "description": "Gain a solid foundation in algorithm design and analysis.",
+    "location": "Software University",
+    "duration": "6 weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 16,
+    "category": "Programming",
+    "image": "Image/Courses-Image/C++ OOP.svg",
+    "title": "C++ OOP",
+    "description": "Course focuses on object-oriented programming principles.",
+    "location": "Software University",
+    "duration": "9 weeks",
+    "difficulty": "Very Hard",
+    "iconType": "fa-battery-full",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 17,
     "category": "Programming",
     "image": "Image/Courses-Image/C%23%20OOP.svg",
     "title": "C# OOP",
@@ -188,6 +265,22 @@
     "duration": "7 weeks",
     "difficulty": "Very Hard",
     "iconType": "fa-battery-full",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 18,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Algorithms%20Advanced%20with%20C%23.svg",
+    "title": "Algorithms Advanced with C#",
+    "description": "Dive deeper into advanced algorithmic techniques.",
+    "location": "Software University",
+    "duration": "6 weeks",
+    "difficulty": "Hard",
+    "iconType": "fa-battery-three-quarters",
     "certificate": "With Certificate",
     "moreDescription": "",
     "price": "",

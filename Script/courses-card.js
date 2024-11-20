@@ -1,8 +1,9 @@
 class SlideLoader {
-    constructor(jsonPath, containerId, glideSelector) {
+    constructor(jsonPath, containerId, glideSelector, topicsSelector) {
         this.jsonPath = jsonPath;
         this.containerId = containerId;
         this.glideSelector = glideSelector;
+        this.topicsSelector = topicsSelector;
     }
 
     // Method to fetch course data from the JSON file
@@ -19,6 +20,10 @@ class SlideLoader {
         }
     }
 
+    cardCountAndDisplayAfterTopics(topics, courses) {
+        topics[3].innerHTML = courses.length;
+    }
+
     // Method to render courses into the specified container
     renderCourses(courses) {
         const container = document.getElementById(this.containerId);
@@ -27,9 +32,13 @@ class SlideLoader {
             return;
         }
 
+        // Clear previous content
+        container.innerHTML = "";
+
+        // Render new cards
         courses.forEach((course, index) => {
-            const slide = document.createElement('li');
-            slide.className = 'glide__slide';
+            const slide = document.createElement("li");
+            slide.className = "glide__slide";
             slide.innerHTML = `
             <div class="card course-card" data-index="${index}">
                 <div class="course-card-top">
@@ -58,40 +67,62 @@ class SlideLoader {
         });
     }
 
-    // Method to initialize Glide.js for the courses carousel
+    // Initialize Glide.js
     initializeGlide() {
         const glide = new Glide(this.glideSelector, {
-            type: 'carousel',
+            type: "carousel",
             perView: 3.5,
             focusAt: 0,
             autoplay: 4000,
             breakpoints: {
                 800: { perView: 2 },
-                480: { perView: 1 }
-            }
+                480: { perView: 1 },
+            },
         });
 
         glide.mount();
 
         // Pause autoplay on hover
-        const cards = document.querySelectorAll('.course-card');
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', () => glide.pause());
-            card.addEventListener('mouseleave', () => glide.play());
+        const cards = document.querySelectorAll(".course-card");
+        cards.forEach((card) => {
+            card.addEventListener("mouseenter", () => glide.pause());
+            card.addEventListener("mouseleave", () => glide.play());
         });
     }
 
-    // Method to save active course card details to localStorage
-    setupCardClickListeners(courses) {
-        const cards = document.querySelectorAll('.course-card');
-        cards.forEach(card => {
-            const index = card.dataset.index; // Retrieve the correct index from data attributes
-            card.addEventListener('click', () => {
-                const activeCourse = courses[index].title;
-                localStorage.setItem('activeCourseCard', JSON.stringify(activeCourse));
-                // TODO: Add method to open another page for more information about selected course
+    // Set up listeners for topic filtering
+    setupTopicFilters(courses) {
+        const topics = document.querySelectorAll(this.topicsSelector);
+        topics.forEach((topic) => {
+            topic.addEventListener("click", () => {
+                if (!isNaN(topic.innerText.trim())) {
+                    return;
+                }
+
+                document
+                    .querySelector(".activeTopic")
+                    .classList.remove("activeTopic");
+                topic.classList.add("activeTopic");
+                this.filterCourses(courses, topic.innerText);
             });
         });
+    }
+
+    // Filter courses based on selected topic
+    filterCourses(courses, selectedTopic) {
+        const filteredCourses =
+            selectedTopic === "All"
+                ? courses
+                : courses.filter(
+                    (course) =>
+                        course.category &&
+                        course.category.toLowerCase() ===
+                        selectedTopic.toLowerCase()
+                );
+
+        // Re-render filtered courses
+        this.renderCourses(filteredCourses);
+        this.initializeGlide();
     }
 
     // Main method to load and display courses
@@ -99,14 +130,24 @@ class SlideLoader {
         const courses = await this.fetchCourses();
         if (courses.length === 0) return;
 
+        // Initial render
         this.renderCourses(courses);
         this.initializeGlide();
-        this.setupCardClickListeners(courses);
+
+        // Setup topic filters
+        this.setupTopicFilters(courses);
+
+        this.cardCountAndDisplayAfterTopics(document.querySelectorAll(this.topicsSelector), courses);
     }
 }
 
-// Instantiate and run the CourseLoader
-document.addEventListener('DOMContentLoaded', () => {
-    const courseLoader = new SlideLoader('Json/courses.json', 'courses', '.glide');
-    courseLoader.load();
+// Instantiate and run the SlideLoader
+document.addEventListener("DOMContentLoaded", () => {
+    const slideLoader = new SlideLoader(
+        "Json/courses.json",
+        "courses",
+        ".glide",
+        ".topic"
+    );
+    slideLoader.load();
 });
