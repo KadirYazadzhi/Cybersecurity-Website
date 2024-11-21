@@ -234,6 +234,15 @@ video {
   row-gap: 1.75rem;
   max-width: 50rem;
 }
+
 .information, .about-me, .tools, .language, .courses {
-    text-align: center;
+  text-align: center;
 }
+
+@media (max-width: 800px) {
+  .about-container {
+    text-align: center;
+  }
+}
+
+

@@ -4,6 +4,10 @@
     fill: var(--text-color);
 }
 
+.asm g {
+    fill: #015c2a;
+}
+
 .tool {
     width: 100px;
     height: 100px;
@@ -25,4 +29,15 @@
     height: 10px;
     background: var(--text-color);
     border-radius: 50%;
+}
+@media (max-width: 800px) {
+    .tool svg, .tool img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tool {
+        width: 70px;
+        height: 70px;
+    }
 }

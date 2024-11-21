@@ -7,3 +7,14 @@
     gap: 10px;
     margin-top: 10px;
 }
+
+@media (max-width: 800px) {
+    .language-card {
+        width: 30%;
+        padding: 8px;
+    }
+
+    .language-card .heading-xs {
+        font-size: clamp(0.9rem, 2vw, 1.335rem)!important;
+    }
+}

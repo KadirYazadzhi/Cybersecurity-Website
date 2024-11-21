@@ -64,4 +64,8 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+
+    .title-small-text {
+        padding: 0;
+    }
 }

@@ -286,5 +286,37 @@
     "price": "",
     "certificateImage": "",
     "topics": ""
+  },
+  {
+    "id": 19,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Software Technologies.svg",
+    "title": "Software Technologies",
+    "description": "Course introduces essential server-side programming concepts and more.",
+    "location": "Software University",
+    "duration": "7 weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
+  },
+  {
+    "id": 20,
+    "category": "Programming",
+    "image": "Image/Courses-Image/Database.svg",
+    "title": "Database",
+    "description": "Course focuses on database design and management.",
+    "location": "Software University",
+    "duration": "??? weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "",
+    "certificateImage": "",
+    "topics": ""
   }
 ]
