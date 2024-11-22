@@ -1,0 +1,40 @@
+.faq {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.right-section {
+    width: 50%;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.faq-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    border-bottom: 1px solid #010718;
+}
+
+.faq-top-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-top-card i {
+    cursor: pointer;
+}
+
