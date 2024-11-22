@@ -1,3 +1,7 @@
+:root {
+    --small-faq-text-size: clamp(0.8rem, 2vw, 0.95rem);
+}
+
 .faq {
     display: flex;
     flex-direction: row;
@@ -36,5 +40,16 @@
 
 .faq-top-card i {
     cursor: pointer;
+}
+
+.faq-hidden-card {
+    display: none;
+    margin-top: 5px;
+}
+
+.faq-hidden-card p {
+    font-size: var(--small-faq-text-size)!important;
+    opacity: 0.7;
+    width: 90%;
 }
 
