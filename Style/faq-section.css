@@ -7,11 +7,7 @@
     flex-direction: row;
 }
 
-.left-section {
-    width: 50%;
-}
-
-.right-section {
+.left-section, .right-section {
     width: 50%;
 }
 
@@ -53,3 +49,21 @@
     width: 90%;
 }
 
+.faq-title, .faq-text {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .faq {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .faq-title, .faq-text {
+        display: flex;
+        text-align: center;
+    }
+}
