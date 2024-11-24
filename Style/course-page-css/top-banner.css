@@ -1,0 +1,72 @@
+:root {
+    --course-title-font-size: clamp(3.5rem, 7vw, 3.9rem);
+    --course-text-font-size: clamp(1rem, 2vw, 1rem);
+    --top-baner-background-color: ;
+    --top-type-box-background-color: ;
+    --top-baner-padding: 20px 30px 50px 0;
+    --baner-section-top-padding: 70px;
+    --small-gap: 10px;
+    --medium-gap: 15px;
+    --big-gap: 20px;
+}
+
+.top-banner-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: var(--top-baner-background-color);
+    padding-top: var(--baner-section-top-padding);
+}
+
+.top-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    padding: var(--top-baner-padding);
+    gap: var(--small-gap);
+}
+
+.top-type-box {
+    padding: 5px 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;
+    background: var(--top-type-box-background-color);
+}
+
+.title {
+    font-size: var(--course-title-font-size);
+}
+
+.course-description {
+    font-size: var(--course-text-font-size);
+}
+
+.icon-line-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--big-gap);
+}
+
+.icon-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--small-gap);
+    font-size: var(--course-text-font-size);
+}
+
+.text-box {
+    padding-top: 20px;
+    width: 60%;
+}
