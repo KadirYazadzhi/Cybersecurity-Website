@@ -1,0 +1,23 @@
+.personal-experience-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-experience-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    padding: var(--top-baner-padding);
+    gap: var(--small-gap);
+}
+
+.personal-experience-box p {
+    width: 62%;
+}
