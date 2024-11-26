@@ -90,6 +90,18 @@ class SlideLoader {
         });
     }
 
+    setupCardClickListeners(courses) {
+        const cards = document.querySelectorAll('.course-card');
+        cards.forEach(card => {
+            const index = card.dataset.index; // Retrieve the correct index from data attributes
+            card.addEventListener('click', () => {
+                const activeCourse = courses[index].title;
+                localStorage.setItem('activeCourseCard', activeCourse);
+                // TODO: Add method to open another page for more information about selected course
+            });
+        });
+    }
+
     // Set up listeners for topic filtering
     setupTopicFilters(courses) {
         const topics = document.querySelectorAll(this.topicsSelector);
@@ -133,6 +145,7 @@ class SlideLoader {
         // Initial render
         this.renderCourses(courses);
         this.initializeGlide();
+        this.setupCardClickListeners(courses);
 
         // Setup topic filters
         this.setupTopicFilters(courses);
