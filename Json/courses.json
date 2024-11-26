@@ -124,7 +124,11 @@
       "Working with more complex loops (nested for loops and while)"
     ],
     "courseSuitableFor": "The course is suitable for complete beginners, with no need for experience in technology or computer science.",
-    "MyExperience": " In this section, I dive into my personal experience with the course and how it impacted my learning journey. I reflect on the knowledge and skills I gained, as well as the challenges I faced and how I overcame them. I discuss the teaching methods, the structure of the course, and whether they met my expectations.\n\nAdditionally, I share my thoughts on how engaging and interactive the lessons were, and how the course materials supported my learning process. This is where I evaluate the overall value of the course, including whether it met my goals and how it compares to my initial expectations.\n\nUltimately, this section offers a candid look at my journey through the course, highlighting what worked well, what could be improved, and how the course contributed to my personal and professional growth. ",
+    "MyExperience": [
+      "In this section, I dive into my personal experience with the course and how it impacted my learning journey. I reflect on the knowledge and skills I gained, as well as the challenges I faced and how I overcame them. I discuss the teaching methods, the structure of the course, and whether they met my expectations.",
+      "Additionally, I share my thoughts on how engaging and interactive the lessons were, and how the course materials supported my learning process. This is where I evaluate the overall value of the course, including whether it met my goals and how it compares to my initial expectations.",
+      "Ultimately, this section offers a candid look at my journey through the course, highlighting what worked well, what could be improved, and how the course contributed to my personal and professional growth."
+    ],
     "educationalOrganization": [
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
       "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."

@@ -70,6 +70,10 @@
     cursor: pointer;
 }
 
+.hidden-part a {
+    color: var(--text-color);
+}
+
 .topic-card .visible-part i {
     cursor: pointer;
 }

@@ -62,4 +62,4 @@ class TopicCardManager {
 }
 
 // Initialize the TopicCardManager
-
+new TopicCardManager('.topic-card');
