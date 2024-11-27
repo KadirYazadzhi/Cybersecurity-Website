@@ -97,7 +97,7 @@ class SlideLoader {
             card.addEventListener('click', () => {
                 const activeCourse = courses[index].title;
                 localStorage.setItem('activeCourseCard', activeCourse);
-                // TODO: Add method to open another page for more information about selected course
+                window.location.href = 'course.html';
             });
         });
     }

@@ -58,18 +58,58 @@ class CourseRenderer {
         if (!this.course.haveCertificate) return;
 
         const certificateSection = document.querySelector(".certificate");
-        certificateSection.className = "sticky-box";
         certificateSection.innerHTML = `
-            <div class="certificate-card">
-                <div class="image-box">
-                    <img src="${this.course.certificateImage}" alt="${this.course.title}">
-                </div>
-                <div class="dot-box">
-                    <div class="dot activeDot"></div>
-                    <div class="dot"></div>
-                </div>
+        <div class="certificate-card">
+            <div class="image-box">
+                <img src="${this.course.certificateImage[0]}" alt="${this.course.title}" class="active-image">
             </div>
-        `;
+        </div>
+    `;
+
+        // Append dynamically generated dots box
+        const dotsBox = this.createDotsForCertificationSection();
+        if (dotsBox) {
+            certificateSection.querySelector(".certificate-card").appendChild(dotsBox);
+
+            // Add event listeners for the dots
+            this.addDotsEventListeners();
+        }
+    }
+
+    createDotsForCertificationSection() {
+        if (this.course.certificateImage.length <= 1) return;
+
+        const dotsBox = document.createElement("div");
+        dotsBox.className = "dot-box";
+
+        for (let i = 0; i < this.course.certificateImage.length; i++) {
+            const dotElement = document.createElement("div");
+            dotElement.className = i === 0 ? "dot activeDot" : "dot";
+            dotElement.dataset.index = i; // Save index for dot
+            dotsBox.appendChild(dotElement);
+        }
+
+        return dotsBox;
+    }
+
+// Add event listeners for dots
+    addDotsEventListeners() {
+        const dots = document.querySelectorAll(".dot");
+        const imageElement = document.querySelector(".image-box img");
+
+        dots.forEach(dot => {
+            dot.addEventListener("click", (event) => {
+                // Get index of clicked dot
+                const index = parseInt(event.target.dataset.index);
+
+                // Update active dot
+                document.querySelector(".activeDot").classList.remove("activeDot");
+                dot.classList.add("activeDot");
+
+                // Update active image
+                imageElement.src = this.course.certificateImage[index];
+            });
+        });
     }
 
     // Render banner section
