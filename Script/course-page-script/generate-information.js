@@ -51,6 +51,7 @@ class CourseRenderer {
         this.generateMiddleSection();
         this.renderPersonalExperienceSection();
         this.renderOrganizationSection();
+        this.renderPriceSection()
     }
 
     // Render certificate section if applicable
@@ -269,6 +270,35 @@ class CourseRenderer {
                 </div>
             </div>
         `;
+    }
+
+    renderPriceSection() {
+        const priceSection = document.querySelector(".price-section");
+        priceSection.innerHTML = `
+        <div class="price-boxes">
+            <h3 class="price-section-title skill-title">Prices and Type</h3>
+                
+            <div class="boxes">
+                <div class="price-box">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p>${(parseInt(this.course.price)).toFixed(2)} lv.</p>
+                </div>
+                <div class="price-box">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p>${(parseInt(this.course.price) * 0.51).toFixed(2)} €</p>
+                </div>
+                <div class="price-box">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p>${(parseInt(this.course.price) * 0.54).toFixed(2)} $</p>
+                </div>
+        
+                <div class="type-box">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Online</p>
+                </div>
+            </div>
+        </div>        
+        `
     }
 }
 

@@ -12,7 +12,7 @@
     "iconType": "fa-battery-quarter",
     "certificate": "With Certificate",
     "moreDescription": "The Programming Basics with C++ course provides essential programming skills required for all tech specialties at SoftUni. It focuses on beginner-level coding, utilizing an Integrated Development Environment (IDE), and foundational concepts such as variables, data types, operators, expressions, input/output operations, conditional statements (if, if-else), and loops (for, while).",
-    "price": "Free",
+    "price": "50",
     "haveCertificate": true,
     "certificateImage":
     [
