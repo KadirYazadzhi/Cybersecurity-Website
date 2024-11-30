@@ -81,3 +81,7 @@
 .languages-small-specification p {
     font-size: var(--text-font-size);
 }
+
+.link {
+    color: var(--text-color-page);
+}
