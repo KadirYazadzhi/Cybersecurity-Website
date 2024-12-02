@@ -1,0 +1,81 @@
+:root {
+    --very-big-gap: 25px;
+    --small-gap: 10px;
+    --big-gap: 20px;
+    --form-width: 65%;
+    --form-elemnts-padding: 12px;
+    --form-elements-background : rgba(62, 240, 142, 0.05);
+    --form-elements-border: 1px solid rgba(62, 240, 142, 0.15);
+    --form-elements-font-size: 16px;
+    --form-btn-border: 2px solid var(--button-main-color);
+}
+
+.contact, .form, .contact-form-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    text-align: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 65%;
+    flex-direction: column;
+    gap: var(--very-big-gap);
+    margin-top: 30px;
+}
+
+.contact-form-top {
+    flex-direction: row;
+    gap: var(--big-gap);
+}
+
+.contact-form-top, .contact-form-medium, .contact-form-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-form-medium {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--small-gap);
+}
+
+.contact-input, .contact-input-textArea {
+    width: 100%;
+    padding: var(--form-elemnts-padding);
+    border-radius: 0.25rem;
+    backdrop-filter: blur(25px) saturate(72%);
+    -webkit-backdrop-filter: blur(25px) saturate(72%);
+    background-color: var(--form-elements-background);
+    border: var(--form-elements-border);
+    color: var(--text-color-page);
+    font-size: var(--form-elements-font-size);
+    outline: none;
+}
+
+.contact-button {
+    width: 30%;
+    cursor: pointer;
+    background: none;
+    border: var(--form-btn-border);
+}
+
+.contact-input-textArea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.contact-input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--small-gap);
+    width: 50%;
+}
