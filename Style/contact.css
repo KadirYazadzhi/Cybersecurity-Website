@@ -79,3 +79,14 @@
     gap: var(--small-gap);
     width: 50%;
 }
+
+
+@media (min-width: 1900px) {
+    .form {
+        width: 95%;
+    }
+
+    .contact-input-textArea {
+        min-height: 240px;
+    }
+}
