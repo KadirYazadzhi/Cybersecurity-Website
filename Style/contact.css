@@ -98,8 +98,6 @@
         min-height: 240px;
     }
 
-   
-
 }
 
 @media (max-width: 800px) {
@@ -113,5 +111,13 @@
 
     .contact-button {
         width: auto;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
     }
 }
