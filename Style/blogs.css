@@ -1,5 +1,8 @@
 .blogs {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .blog-cards {
@@ -100,4 +103,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+@media (max-width: 800px) {
+    .blog-cards {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
 }

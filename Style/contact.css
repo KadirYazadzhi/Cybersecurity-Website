@@ -10,6 +10,14 @@
     --form-btn-border: 2px solid var(--button-main-color);
 }
 
+.contact-form {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+}
+
 .contact, .form, .contact-form-top {
     display: flex;
     align-items: center;
@@ -88,5 +96,22 @@
 
     .contact-input-textArea {
         min-height: 240px;
+    }
+
+   
+
+}
+
+@media (max-width: 800px) {
+    .contact-form-top {
+        flex-direction: column;
+    }
+
+    .contact-input-box {
+        width: 100%;
+    }
+
+    .contact-button {
+        width: auto;
     }
 }
