@@ -1,0 +1,64 @@
+:root {
+    --card-background: rgba(141, 252, 191, 0.05);
+    --card-background-hover: rgba(141, 252, 191, 0.12);
+    --card-border-standart: 1px solid rgba(35, 174, 98, 0.6);
+    --card-border-hover: 1px solid rgba(35, 174, 98, 1);
+    --elements-font-size: clamp(1.2rem, 4vw, 1.165rem);
+}
+
+.price-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--section-z-index);
+}
+
+.price-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.price-box {
+    width: 13%;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: var(--small-gap);
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--top-baner-padding);
+    font-size: var(--elements-font-size);
+}
+
+.price-box, .type-box {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--card-background);
+    border: var(--card-border-standart);
+    cursor: pointer;
+    flex-direction: row;
+    gap: var(--very-small-gap);
+    transition: var(--animation);
+}
+
+.price-box:hover, .type-box:hover {
+    border: var(--card-border-hover);
+    background: var(--card-background-hover);
+}
+
+.type-box {
+    width: 24%;
+}
