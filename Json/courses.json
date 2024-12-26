@@ -24,10 +24,10 @@
       "2. Course Introduction",
       "3. First Steps in Programming",
       "4. Exercise: First Steps in Programming",
-      "5. Checks",
-      "6. Exercise: Checks",
-      "7. More Complex Checks",
-      "8. Exercise: More Complex Checks",
+      "5. Conditional Statements",
+      "6. Exercise: Conditional Statements",
+      "7. Conditional Statements Advanced",
+      "8. Exercise: Conditional Statements Advanced",
       "9. For Loop",
       "10. Exercise: For Loop",
       "11. While Loop",
@@ -39,8 +39,6 @@
     ],
     "topicsLinks": [
       [
-        null,
-        null,
         null
       ],
       [
@@ -54,69 +52,69 @@
         "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/First%20Steps%20In%20Coding"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92287/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/First%20Steps%20In%20Coding%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        "https://softuni.bg/trainings/resources/officedocument/92288/presentation-programming-basics-with-cpp-january-2024/4430",
+        "https://softuni.bg/trainings/resources/officedocument/92289/lab-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Conditional%20Statements"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92290/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Conditional%20Statements%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        "https://softuni.bg/trainings/resources/officedocument/92291/presentation-programming-basics-with-cpp-january-2024/4430",
+        "https://softuni.bg/trainings/resources/officedocument/92292/lab-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Conditional%20Statements%20Advanced"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92293/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Conditional%20Statements%20Advanced%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        "https://softuni.bg/trainings/resources/officedocument/92294/presentation-programming-basics-with-cpp-january-2024/4430",
+        "https://softuni.bg/trainings/resources/officedocument/92295/lab-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/For%20Loop"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92296/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/For%20Loop%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        "https://softuni.bg/trainings/resources/officedocument/92297/presentation-programming-basics-with-cpp-january-2024/4430",
+        "https://softuni.bg/trainings/resources/officedocument/92298/lab-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/While%20Loop"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92299/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/While%20Loop%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        "https://softuni.bg/trainings/resources/officedocument/92300/presentation-programming-basics-with-cpp-january-2024/4430",
+        "https://softuni.bg/trainings/resources/officedocument/92301/lab-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Nested%20Loops"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92302/exercise-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Nested%20Loops%20-%20Exercise"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        "https://softuni.bg/trainings/resources/officedocument/92433/exam-preparation-problem-descriptions-programming-basics-with-cpp-january-2024/4430",
+        "https://github.com/KadirYazadzhi/SoftUni---Programming-Basics-with-CPlus/tree/main/Exam%20Preparation"
       ],
       [
-        "",
-        "",
-        ""
+        null,
+        null,
+        null
       ]
     ],
     "skills": [
@@ -141,6 +139,7 @@
   {
     "id": 2,
     "category": "Programming",
+    "type": "Course",
     "image": "Image/Courses-Image/TypeScript.svg",
     "title": "TypeScript",
     "description": "Master the fundamentals of TypeScript, static language based on Javascript.",
@@ -151,8 +150,47 @@
     "certificate": "With Certificate",
     "moreDescription": "",
     "price": "",
+    "haveCertificate": true,
     "certificateImage": "",
-    "topics": ""
+    "topics": [
+      "1. Resources",
+      "2. Course Introduction",
+      "3. First Steps in Programming",
+      "4. Exercise: First Steps in Programming",
+      "5. Conditional Statements",
+      "6. Exercise: Conditional Statements",
+      "7. Conditional Statements Advanced",
+      "8. Exercise: Conditional Statements Advanced",
+      "9. For Loop",
+      "10. Exercise: For Loop",
+      "11. While Loop",
+      "12. Exercise: While Loop",
+      "13. Nested Loops",
+      "14. Exercise: Nested Loops",
+      "15. Exam Preparation",
+      "16. Regular Exam"
+    ],
+    "topicsLinks": [
+      []
+    ],
+    "skills": [
+      "Working with the console (input and output of data)",
+      "Working with loops (for)",
+      "Working with more complex logical conditions",
+      "Working with logical conditions (if-else)",
+      "Performing simple calculations",
+      "Working with more complex loops (nested for loops and while)"
+    ],
+    "courseSuitableFor": "The course is suitable for complete beginners, with no need for experience in technology or computer science.",
+    "MyExperience": [
+      "In this section, I dive into my personal experience with the course and how it impacted my learning journey. I reflect on the knowledge and skills I gained, as well as the challenges I faced and how I overcame them. I discuss the teaching methods, the structure of the course, and whether they met my expectations.",
+      "Additionally, I share my thoughts on how engaging and interactive the lessons were, and how the course materials supported my learning process. This is where I evaluate the overall value of the course, including whether it met my goals and how it compares to my initial expectations.",
+      "Ultimately, this section offers a candid look at my journey through the course, highlighting what worked well, what could be improved, and how the course contributed to my personal and professional growth."
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
   },
   {
     "id": 3,
