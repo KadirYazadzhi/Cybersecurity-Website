@@ -1,0 +1,36 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 174, 98, 0.3); /* Тъмнина за ефект */
+    filter: blur(5px); /* Замъгляващ ефект */
+}
+
+.content {
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
