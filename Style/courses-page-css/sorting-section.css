@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 5px 15px;
+    padding: 5px 12px;
     border: 1px solid var(--button-main-color);
     gap: 10px;
     border-radius: 12px;
@@ -27,11 +27,11 @@
 .sorting-box {
     cursor: pointer;
     transition: var(--animation);
+    padding: 2px 8px;
+    border-radius: 6px;
 }
 
 .active-box {
-    padding: 2px 8px;
-    border-radius: 6px;
     background: var(--button-main-color);
     color: white;
 }
