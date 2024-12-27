@@ -479,5 +479,345 @@
     "price": "",
     "certificateImage": "",
     "topics": ""
+  },
+  {
+    "id": 21,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Angular.jpg",
+    "title": "Angular",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/C# Web Basics.jpg",
+    "title": "C# Web Basics",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Database Applications.jpg",
+    "title": "Database Applications",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Django Basics.jpg",
+    "title": "Django Basics",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Unity 3D Basics.jpg",
+    "title": "Unity 3D Basics",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Python Advanced.jpg",
+    "title": "Python Advanced",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/PHP Fundamentals.jpg",
+    "title": "PHP Fundamentals",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/JS Back-End.jpg",
+    "title": "JS Back-End",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Fundamentals In Mathematics.jpg",
+    "title": "Fundamentals in Mathematics",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Angular Fundamentals.jpg",
+    "title": "Angular Fundamentals",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "",
+    "iconType": "",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
   }
 ]
