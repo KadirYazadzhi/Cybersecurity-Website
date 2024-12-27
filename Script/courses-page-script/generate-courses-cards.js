@@ -141,7 +141,7 @@ class SlideLoader {
         });
     }
 
-    // Apply filters based on the active sorting options
+    // Apply filters based on active sorting options
     applyFilters() {
         this.filteredCourses = this.courses;
 
@@ -149,17 +149,65 @@ class SlideLoader {
             const activeBoxes = container.querySelectorAll(".active-box");
             if (activeBoxes.length > 0 && !activeBoxes[0].innerText.includes("All")) {
                 const filterCriteria = Array.from(activeBoxes).map(box => box.innerText.trim());
-                this.filteredCourses = this.filteredCourses.filter(course =>
-                    filterCriteria.includes(course.category) ||
-                    filterCriteria.includes(course.difficulty) ||
-                    filterCriteria.includes(course.duration[0]) ||
-                    filterCriteria.includes(course.certificate)
-                );
+                console.log(filterCriteria);
+
+                this.filteredCourses = this.filteredCourses.filter(course => {
+                    // Check category, difficulty, certificate first
+                    const matchesCategory = filterCriteria.includes(course.category);
+                    const matchesDifficulty = filterCriteria.includes(course.difficulty);
+                    const matchesCertificate = filterCriteria.includes(course.certificate);
+
+                    // Convert duration to months and check if it matches any filter
+                    const courseDurationInMonths = this.parseDuration(course.duration);
+
+                    let matchesDuration = null;
+
+                    // Check if we have a duration filter (e.g. "< 1 month" or "> 2 months")
+                    if (filterCriteria.some(f => f.startsWith(">"))) {
+                        const filter = filterCriteria.find(f => f.startsWith(">"));
+                        const duration = parseFloat(filter.split(" ")[1]); // Extract number after ">"
+                        matchesDuration = !isNaN(courseDurationInMonths) && courseDurationInMonths > duration;
+                    } else if (filterCriteria.some(f => f.startsWith("<"))) {
+                        const filter = filterCriteria.find(f => f.startsWith("<"));
+                        const duration = parseFloat(filter.split(" ")[1]); // Extract number after "<"
+                        matchesDuration = !isNaN(courseDurationInMonths) && courseDurationInMonths <= duration;
+                    }
+
+                    return (matchesCategory || matchesDifficulty || matchesCertificate || matchesDuration);
+                });
             }
         });
 
         this.currentPage = 1; // Reset to the first page after filtering
         this.renderCourses();
+    }
+
+// Parse duration (e.g., "1 month", "3 weeks", "1-3 months")
+    parseDuration(duration) {
+        if (!duration) return NaN;
+
+        // Check if the duration is in months
+        if (duration.includes("month") && !duration.includes("months")) {
+            const months = parseFloat(duration);
+            return isNaN(months) ? NaN : months;
+        }
+        // Check if the duration is in weeks
+        if (duration.includes("week")) {
+            const weeks = parseFloat(duration);
+            const months = weeks / 4; // Convert weeks to months
+            return isNaN(months) ? NaN : months;
+        }
+        // Handle ranges like "1-3 months"
+        const rangeMatch = duration.match(/^(\d+)-(\d+) months$/);
+        if (rangeMatch) {
+            const min = parseFloat(rangeMatch[1]);
+            const max = parseFloat(rangeMatch[2]);
+
+            const result = min + max / 2 + 1;
+            return isNaN(result) ? NaN : result;
+        }
+
+        return NaN;
     }
 
     // Setup click listeners for the sorting buttons
