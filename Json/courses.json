@@ -1057,5 +1057,243 @@
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
       "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
     ]
+  },
+  {
+    "id": 38,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/PHP Basics.jpg",
+    "title": "PHP Basics",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Easy",
+    "iconType": "fa-battery-quarter",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 39,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/C%23%20MVC%20Frameworks%20-%20ASP.NET.jpg",
+    "title": "C# MVC Frameworks - ASP.NET",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 40,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Technology Fundamentals with PHP.jpg",
+    "title": "Technology Fundamentals with PHP",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 41,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/C Programming.jpg",
+    "title": "C Programming",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 42,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Quality Program Code.jpg",
+    "title": "Quality Program Code",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Medium",
+    "iconType": "fa-battery-half",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 43,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Web Services and Cloud.jpg",
+    "title": "Web Services and Cloud",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Easy",
+    "iconType": "fa-battery-quarter",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Technology Fundamentals with C%23.jpg",
+    "title": "Technology Fundamentals with C#",
+    "description": "",
+    "location": "Software University",
+    "duration": " weeks",
+    "difficulty": "Easy",
+    "iconType": "fa-battery-quarter",
+    "certificate": "Without Certificate",
+    "moreDescription": "",
+    "price": "0",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
+      "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
   }
 ]
