@@ -149,7 +149,6 @@ class SlideLoader {
             const activeBoxes = container.querySelectorAll(".active-box");
             if (activeBoxes.length > 0 && !activeBoxes[0].innerText.includes("All")) {
                 const filterCriteria = Array.from(activeBoxes).map(box => box.innerText.trim());
-                console.log(filterCriteria);
 
                 this.filteredCourses = this.filteredCourses.filter(course => {
                     // Check category, difficulty, certificate first
