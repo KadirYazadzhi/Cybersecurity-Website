@@ -1064,7 +1064,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/PHP Basics.jpg",
     "title": "PHP Basics",
-    "description": "",
+    "description": "Learn the core principles of PHP programming for building dynamic web applications.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Easy",
@@ -1098,7 +1098,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/C%23%20MVC%20Frameworks%20-%20ASP.NET.jpg",
     "title": "C# MVC Frameworks - ASP.NET",
-    "description": "",
+    "description": "Master the ASP.NET MVC framework for creating modern, scalable web applications in C#.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Medium",
@@ -1132,7 +1132,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/Technology Fundamentals with PHP.jpg",
     "title": "Technology Fundamentals with PHP",
-    "description": "",
+    "description": "Build a strong foundation in technology concepts using PHP as the primary language.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Medium",
@@ -1166,7 +1166,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/C Programming.jpg",
     "title": "C Programming",
-    "description": "",
+    "description": "Explore the fundamentals of C programming, focusing on structure, efficiency, and problem-solving.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Medium",
@@ -1200,7 +1200,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/Quality Program Code.jpg",
     "title": "Quality Program Code",
-    "description": "",
+    "description": "Develop high-quality C# code with an emphasis on best practices and maintainability.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Medium",
@@ -1234,7 +1234,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/Web Services and Cloud.jpg",
     "title": "Web Services and Cloud",
-    "description": "",
+    "description": "Gain practical knowledge in creating web services and leveraging cloud technologies.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Easy",
@@ -1268,7 +1268,7 @@
     "type": "Course",
     "image": "Image/Courses-Image/Technology Fundamentals with C%23.jpg",
     "title": "Technology Fundamentals with C#",
-    "description": "",
+    "description": "Learn essential technology concepts with a focus on C# programming.",
     "location": "Software University",
     "duration": " weeks",
     "difficulty": "Easy",
@@ -1294,6 +1294,39 @@
     "educationalOrganization": [
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmitkovtori.github.io%2FMitko.Vtori-World%2Fimages%2FSoftUni.png&f=1&nofb=1&ipt=cfbee56e4415859faf1cf667cf297abbb399b0ff7e175b05ab835893510b919b&ipo=images",
       "SoftUni is a top IT training center in Bulgaria, offering practical courses in programming, web development, and more. Known for its hands-on approach, it prepares students for careers in tech."
+    ]
+  },
+  {
+    "id": 44,
+    "category": "Programming",
+    "type": "Course",
+    "image": "Image/Courses-Image/Web Programming.jpg",
+    "title": "Web Programming",
+    "description": "Learn the fundamentals of creating interactive web applications using modern programming techniques.",
+    "location": "Atlas IT Academy",
+    "duration": " weeks",
+    "difficulty": "Easy",
+    "iconType": "fa-battery-quarter",
+    "certificate": "With Certificate",
+    "moreDescription": "",
+    "price": "540",
+    "haveCertificate": true,
+    "certificateImage":
+    [
+    ],
+    "topics": [
+    ],
+    "topicsLinks": [
+    ],
+    "skills": [
+
+    ],
+    "courseSuitableFor": "",
+    "MyExperience": [
+
+    ],
+    "educationalOrganization": [
+
     ]
   }
 ]
