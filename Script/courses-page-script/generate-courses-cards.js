@@ -216,6 +216,36 @@ class SlideLoader {
         });
     }
 
+    setupSearchListener() {
+        const searchField = document.querySelector('.search-field input');
+        if (!searchField) {
+            console.error('Search field with class "search-field" not found.');
+            return;
+        }
+
+        searchField.addEventListener('input', (event) => {
+            const searchTerm = event.target.value.toLowerCase().trim();
+
+            if (searchTerm.length >= 2) {
+                this.filteredCourses = this.courses.filter(course => {
+                    return (
+                        course.title.toLowerCase().includes(searchTerm) ||
+                        course.description.toLowerCase().includes(searchTerm) ||
+                        course.category.toLowerCase().includes(searchTerm) ||
+                        course.difficulty.toLowerCase().includes(searchTerm) ||
+                        course.certificate.toLowerCase().includes(searchTerm) ||
+                        course.location.toLowerCase().includes(searchTerm)
+                    );
+                });
+            } else {
+                this.filteredCourses = this.courses;
+            }
+
+            this.currentPage = 1;
+            this.renderCourses();
+        });
+    }
+
     // Main method to load and display courses
     async load() {
         this.courses = await this.fetchCourses();
@@ -223,6 +253,7 @@ class SlideLoader {
 
         this.filteredCourses = this.courses; // Initially, all courses are shown
         this.setupSortingListeners(); // Initialize sorting listeners
+        this.setupSearchListener(); // Initialize search listener
         this.renderCourses();
     }
 }
