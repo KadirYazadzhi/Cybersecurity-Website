@@ -1,0 +1,44 @@
+:root {
+
+}
+
+.code-container {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0.7rem;
+}
+
+.code-header {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 2rem;
+    right: 0.6rem;
+}
+
+.copy-btn {
+    border-radius: var(--small-border-radius);
+    opacity: 0.4;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: opacity 0.4s;
+    backdrop-filter: blur(25px) saturate(72%);
+    -webkit-backdrop-filter: blur(25px) saturate(72%);
+    background-color: var(--card-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.copy-btn:hover {
+    opacity: 1;
+}
+
+pre {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: auto;
+    min-width: 100%;
+}
+
+code {
+    border-radius: var(--standart-border-radius);
+}
