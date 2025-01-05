@@ -4,6 +4,7 @@ class SlideLoader {
         this.containerId = containerId;
         this.glideSelector = glideSelector;
         this.topicsSelector = topicsSelector;
+        this.maxCard = 18;
     }
 
     // Method to fetch course data from the JSON file
@@ -20,8 +21,8 @@ class SlideLoader {
         }
     }
 
-    cardCountAndDisplayAfterTopics(topics, courses) {
-        topics[3].innerHTML = courses.length;
+    cardCountAndDisplayAfterTopics(topics) {
+        topics[3].innerHTML = this.maxCard;
     }
 
     // Method to render courses into the specified container
@@ -37,6 +38,8 @@ class SlideLoader {
 
         // Render new cards
         courses.forEach((course, index) => {
+            if (index > this.maxCard) return;
+
             const slide = document.createElement("li");
             slide.className = "glide__slide";
             slide.innerHTML = `

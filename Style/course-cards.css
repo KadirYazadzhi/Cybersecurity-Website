@@ -153,6 +153,12 @@
     border: 1px solid var(--topic-border-color);
 }
 
+.small-course-text {
+    font-size: 12px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
 @media (max-width: 800px) {
     .topics {
         gap: 5px;

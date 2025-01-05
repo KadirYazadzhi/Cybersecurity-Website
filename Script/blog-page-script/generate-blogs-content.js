@@ -1,45 +1,39 @@
 class BlogGenerator {
-    constructor(jsonPath, topContainer, mainContainer) {
-        this.jsonPath = jsonPath;
-        this.topContainer = document.querySelector(topContainer);
-        this.mainContainer = document.querySelector(mainContainer);
-        this.blogData = null; // Adjusted to reflect the structure
+    // Constructor initializes paths and containers for the blog
+    constructor(jsonPath, topContainerSelector, mainContainerSelector) {
+        this.jsonPath = jsonPath; // Path to the JSON file
+        this.topContainer = document.querySelector(topContainerSelector); // Container for the top section
+        this.mainContainer = document.querySelector(mainContainerSelector); // Container for the main content
+        this.blogData = null; // Placeholder for blog data
     }
 
     // Fetch blog data from the JSON file
     async fetchBlogData() {
         try {
-            const response = await fetch(this.jsonPath);
+            const response = await fetch(this.jsonPath); // Fetch the JSON file
             if (!response.ok) {
-                throw new Error(`Failed to fetch blog data: ${response.status}`);
+                throw new Error(`Failed to fetch blog data: ${response.status}`); // Handle HTTP errors
             }
-            return await response.json();
+            return await response.json(); // Parse and return the JSON data
         } catch (error) {
-            console.error("Error fetching blog data:", error);
-            return null;
+            console.error("Error fetching blog data:", error); // Log any errors
+            return null; // Return null in case of an error
         }
     }
 
-    // Main method to load and display the blog
+    // Load the blog by fetching data and generating the top section
     async load() {
-        this.blogData = await this.fetchBlogData();
-        console.log(this.blogData); // Log the fetched data to see its structure
-        if (!this.blogData || !this.blogData.blog) {
-            console.error("Error: blog data or topSection is missing.");
+        this.blogData = await this.fetchBlogData(); // Fetch the blog data
+        if (!this.blogData || !this.blogData.blog || !this.blogData.blog.topSection) {
+            console.error("Error: Invalid blog data structure."); // Check for valid structure
             return;
         }
-
-        this.generateTopSection();
+        this.generateTopSection(); // Generate the top section
     }
 
-
+    // Generate the top section of the blog
     generateTopSection() {
-        const topSection = this.blogData?.blog?.topSection; // Optional chaining
-        if (!topSection) {
-            console.error("Error: topSection is missing in the blog data.");
-            return;
-        }
-
+        const topSection = this.blogData.blog.topSection; // Extract top section data
         this.topContainer.innerHTML = `
         <div class="top-banner">
             <div class="top-type-box"><p>${topSection.type}</p></div>
@@ -52,18 +46,59 @@ class BlogGenerator {
             <div class="text-box">
                 <p class="course-description">${topSection.description}</p>
             </div>
-        </div>
-    `;
+        </div>`;
     }
 
+    // Load a single HTML fragment from the specified file path
+    async loadFragment(filePath) {
+        try {
+            const response = await fetch(filePath); // Fetch the HTML fragment
+            if (!response.ok) {
+                throw new Error(`Failed to load fragment: ${response.status}`); // Handle HTTP errors
+            }
+            const html = await response.text(); // Read the HTML content
+
+            const wrapper = document.createElement("div"); // Create a wrapper for the fragment
+            wrapper.innerHTML = html; // Set the fragment's content
+            this.mainContainer.appendChild(wrapper.firstElementChild); // Append to the main container
+        } catch (error) {
+            console.error(`Error loading fragment from ${filePath}:`, error); // Log errors
+        }
+
+        highlightCode(); // Highlight code after loading the fragment
+    }
+
+    // Load all HTML fragments that match the active blog from localStorage
+    async loadAllFragments(fragmentPaths) {
+        const activeBlog = localStorage.getItem("activeBlog"); // Get the active blog ID
+        if (!activeBlog) {
+            console.warn("No active blog specified in localStorage."); // Warn if no blog is active
+            return;
+        }
+
+        for (const path of fragmentPaths) {
+            if (path.includes(`blog-${activeBlog}`)) { // Match the active blog's file path
+                await this.loadFragment(path); // Load the matching fragment
+            }
+        }
+    }
 }
 
-// Instantiate and run the BlogGenerator
+// Instantiate and initialize the BlogGenerator on DOM content load
 document.addEventListener("DOMContentLoaded", () => {
     const blogGenerator = new BlogGenerator(
-        "Json/blogs.json",
-        ".top-banner-section",
-        ".main-section"
+        "Json/blogs.json", // Path to the JSON file
+        ".top-banner-section", // Selector for the top section container
+        ".main-section" // Selector for the main content container
     );
-    blogGenerator.load();
+
+    blogGenerator.load(); // Load the blog data and generate the top section
+
+    const fragments = [
+        "Templates/Blogs/blog-1.html", // Path to blog 1's HTML fragment
+        "Templates/Blogs/blog-2.html", // Path to blog 2's HTML fragment
+        "Templates/Blogs/blog-3.html"  // Path to blog 3's HTML fragment
+    ];
+
+    blogGenerator.loadAllFragments(fragments); // Load all relevant fragments
 });
