@@ -24,7 +24,7 @@ class BlogGenerator {
     // Load the blog by fetching data and generating the top section
     async load() {
         this.blogData = await this.fetchBlogData(); // Fetch the blog data
-        if (!this.blogData || !this.blogData.blog || !this.blogData.blog.topSection) {
+        if (!this.blogData || !this.blogData.blog) {
             console.error("Error: Invalid blog data structure."); // Check for valid structure
             return;
         }
@@ -33,7 +33,13 @@ class BlogGenerator {
 
     // Generate the top section of the blog
     generateTopSection() {
-        const topSection = this.blogData.blog.topSection; // Extract top section data
+        const topSection = this.blogData.blog[`topSection-${this.getLocalStorageElement()}`]; // Access the correct section
+
+        if (!topSection) {
+            console.error(`Error: No data found for key ${topSectionKey}.`);
+            return;
+        }
+
         this.topContainer.innerHTML = `
         <div class="top-banner">
             <div class="top-type-box"><p>${topSection.type}</p></div>
@@ -47,6 +53,18 @@ class BlogGenerator {
                 <p class="course-description">${topSection.description}</p>
             </div>
         </div>`;
+    }
+
+    getLocalStorageElement() {
+        const activeBlog = localStorage.getItem("activeBlog");
+
+        if (!activeBlog || isNaN(activeBlog)) {
+            console.warn("Invalid or missing activeBlog in localStorage. Redirecting...");
+            window.location.href = 'index.html';
+            return null; // Return null if no valid ID
+        }
+
+        return activeBlog;
     }
 
     // Load a single HTML fragment from the specified file path
@@ -70,14 +88,8 @@ class BlogGenerator {
 
     // Load all HTML fragments that match the active blog from localStorage
     async loadAllFragments(fragmentPaths) {
-        const activeBlog = localStorage.getItem("activeBlog"); // Get the active blog ID
-        if (!activeBlog) {
-            console.warn("No active blog specified in localStorage."); // Warn if no blog is active
-            return;
-        }
-
         for (const path of fragmentPaths) {
-            if (path.includes(`blog-${activeBlog}`)) { // Match the active blog's file path
+            if (path.includes(`blog-${this.getLocalStorageElement()}`)) { // Match the active blog's file path
                 await this.loadFragment(path); // Load the matching fragment
             }
         }
@@ -87,7 +99,7 @@ class BlogGenerator {
 // Instantiate and initialize the BlogGenerator on DOM content load
 document.addEventListener("DOMContentLoaded", () => {
     const blogGenerator = new BlogGenerator(
-        "Json/blogs.json", // Path to the JSON file
+        "Json/blogs-top-section.json", // Path to the JSON file
         ".top-banner-section", // Selector for the top section container
         ".main-section" // Selector for the main content container
     );

@@ -11,11 +11,27 @@
     },
     "topSection-2": {
       "type": "Programming",
-      "title": "OOP Programming",
-      "date": "04.01.2025",
+      "title": "Clean Code Principles",
+      "date": "06.01.2025",
       "time": "10 minutes",
       "author": "Kadir Yazadzhi",
-      "description": "Object-Oriented Programming (OOP) is a programming paradigm that uses the concept of \"objects\" to design and structure software. Objects represent real-world entities and encapsulate data (attributes) and behavior (methods) within a single unit. OOP makes complex systems more manageable by organizing code into reusable and modular components. Unlike procedural programming, which focuses on functions and sequences of actions, OOP emphasizes the relationships between objects and their interactions."
+      "description": ""
+    },
+    "topSection-3": {
+      "type": "Cybersecurity",
+      "title": "Phishing Attack",
+      "date": "08.01.2025",
+      "time": "10 minutes",
+      "author": "Kadir Yazadzhi",
+      "description": ""
+    },
+    "topSection-4": {
+      "type": "Cybersecurity",
+      "title": "Pentesting Basics",
+      "date": "12.01.2025",
+      "time": "10 minutes",
+      "author": "Kadir Yazadzhi",
+      "description": ""
     }
   }
 }
