@@ -44,6 +44,6 @@ class LanguageCardManager {
 const manager = new LanguageCardManager(
     ".language-card", // Selector for the language cards
     "activeLanguage", // Key for localStorage
-    "languages.html" // Redirect URL
+    "language.html" // Redirect URL
 );
 manager.init(); // Initialize the card manager

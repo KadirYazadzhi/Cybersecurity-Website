@@ -4,6 +4,7 @@
     --topic-hover-background: rgba(35, 174, 98, 0.2);
     --topic-border-color: rgba(35, 174, 98, 0.2);
     --topic-hover-border-color: rgba(35, 174, 98, 0.4);
+    --small-text-font-size: clamp(0.9rem, 2vw, 0.95rem);
 }
 
 .courses-slider {
@@ -154,9 +155,14 @@
 }
 
 .small-course-text {
-    font-size: 12px;
-    opacity: 0.4;
+    font-size: var(--small-text-font-size);
+    opacity: 0.2;
     cursor: pointer;
+    transition: opacity var(--animation);
+}
+
+.small-course-text:hover {
+    opacity: 0.6;
 }
 
 @media (max-width: 800px) {
