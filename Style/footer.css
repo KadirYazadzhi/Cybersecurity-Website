@@ -96,10 +96,12 @@ footer {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    transition: var(--animation);
 }
 
 .items p:hover {
     color: #4fd68c;
+    transform: translateX(10px);
 }
 
 .footer-items h3, .left-bottom-part h3, .right-bottom-part h3 {
@@ -127,10 +129,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--animation);
 }
 
 .social-icon:hover {
     color: #4fd68c;
+    transform: translateY(-5px);
 }
 
 .plus-part {
