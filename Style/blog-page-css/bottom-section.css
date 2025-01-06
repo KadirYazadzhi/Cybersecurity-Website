@@ -1,0 +1,23 @@
+.other-blogs {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-blog-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    padding: var(--main-padding);
+    gap: var(--small-gap);
+}
+
+.blog-card {
+    width: 50%;
+}
