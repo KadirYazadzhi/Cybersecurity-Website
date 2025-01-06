@@ -42,3 +42,7 @@ pre {
 code {
     border-radius: var(--standart-border-radius);
 }
+
+.after-code {
+    margin-top: -30px;
+}

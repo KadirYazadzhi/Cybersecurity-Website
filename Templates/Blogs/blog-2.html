@@ -1,0 +1,377 @@
+<div class="main">
+    <div class="text-container">
+        <h2 class="blog-subtitle">What is Clean Code?</h2>
+
+        <div class="blog-content-element">
+            <p class="text">
+                Clean code refers to code that is easy to read, understand, and maintain. It follows conventions, uses clear
+                naming, and is written in a way that others (and your future self) can easily work with. The key principles of
+                clean code come from Robert C. Martin’s book Clean Code: A Handbook of Agile Software Craftsmanship, but these concepts
+                apply universally, regardless of programming language.
+           </p>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <h2 class="blog-subtitle">Key Principles of Clean Code</h2>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">1. Meaningful Naming </h3>
+            <p class="text">
+                The names of variables, methods, classes, and functions should convey their purpose and intent.
+                A well-chosen name can eliminate the need for excessive comments.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad naming
+                    int temp = 5;
+
+                    // Good naming
+                    int numberOfAttempts = 5;
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the first example, <span class="special-element">temp</span> is too generic and could mean anything. In the second example,
+                    <span class="special-element">numberOfAttempts</span> clearly communicates its purpose, making the code easier to understand.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Naming:</h3>
+            <p class="text list">
+                <b>Be descriptive:</b> Choose names that reflect the purpose of the variable or method.
+            </p>
+            <p class="text list">
+                <b>Avoid abbreviations:</b> Use complete words to avoid ambiguity.
+            </p>
+            <p class="text list">
+                <b>Use consistent naming conventions:</b> Follow the naming conventions of the language you are using.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">2. Keep Functions Small</h3>
+            <p class="text">
+                Functions should be small, focused on a single task, and ideally fit within a
+                single screen. This makes them easier to test, debug, and understand.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad function (does multiple things)
+                    void processOrder(Order order) {
+                        calculateTax(order);
+                        generateInvoice(order);
+                        sendEmailConfirmation(order);
+                        updateDatabase(order);
+                    }
+
+                    // Good function (focused on one task)
+                    void processPayment(Order order) {
+                        calculateTax(order);
+                        generateInvoice(order);
+                    }
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, we have broken down the tasks into smaller, more manageable
+                    functions. Each function does only one thing, making the code easier to maintain.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Functions:</h3>
+            <p class="text list">
+                <b>One function, one purpose:</b> A function should do one thing, and it should do it well.
+            </p>
+            <p class="text list">
+                <b>Limit function length:</b> Try to keep functions small enough that they can fit within a single screen.
+                If they get too large, break them down into smaller, helper functions.
+            </p>
+            <p class="text list">
+                <b>Use descriptive function names:</b> The name of the function should describe what it does, making it self-explanatory.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">3. Avoid Duplication</h3>
+            <p class="text">
+                Duplication in code creates redundancy, increases the risk of errors, and makes maintenance
+                harder. Instead, aim to write code that can be reused across the project.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad (duplicated logic)
+                    double calculateOrderPrice(Order order) {
+                        double price = order.basePrice + order.tax;
+                        return price;
+                    }
+
+                    double calculateInvoicePrice(Invoice invoice) {
+                        double price = invoice.basePrice + invoice.tax;
+                        return price;
+                    }
+
+                    // Good (avoid duplication by creating a common function)
+                    double calculatePrice(double basePrice, double tax) {
+                        return basePrice + tax;
+                    }
+
+                    double calculateOrderPrice(Order order) {
+                        return calculatePrice(order.basePrice, order.tax);
+                    }
+
+                    double calculateInvoicePrice(Invoice invoice) {
+                        return calculatePrice(invoice.basePrice, invoice.tax);
+                    }
+
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, we removed duplication by creating a
+                    shared function <span class="special-element">calculatePrice()</span>, which helps us avoid repeating similar code.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Avoiding Duplication:</h3>
+            <p class="text list">
+                <b>Use functions or methods for repeated logic:</b> If you find yourself repeating the same code, extract it into a separate function.
+            </p>
+            <p class="text list">
+                Use inheritance or composition for shared behavior: In object-oriented design, use inheritance or composition to reuse code across classes.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">4. Commenting and Documentation</h3>
+            <p class="text">
+                Good comments are important, but they should not replace good code. Comments should explain "why" something is done,
+                rather than "what" is done, since the latter can usually be inferred from the code itself.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad comment (explains what is obvious)
+                    int daysInWeek = 7; // Set number of days in a week
+
+                    // Good comment (explains why)
+                    int daysInWeek = 7; // Constant representing the number of days in a week for calculations
+
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, the comment explains why the variable is needed, which adds value.
+                    It’s clear what the variable does without the comment.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Commenting:</h3>
+            <p class="text list">
+                <b>Avoid obvious comments:</b> Don’t comment on what is already clear from the code.
+            </p>
+            <p class="text list">
+                <b>Explain why, not what:</b> Focus on explaining why a particular approach was
+                chosen, especially for complex or non-obvious solutions.
+            </p>
+            <p class="text list">
+                <b>Remove unnecessary comments:</b> If code is self-explanatory, skip comments
+                to avoid cluttering the codebase.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">5. Use Meaningful Indentation and Spacing</h3>
+            <p class="text">
+                Proper indentation and spacing help visually structure the code, making it easier to understand
+                and follow. A consistent code style ensures that your code is easy to navigate.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad indentation
+                    if(condition){
+                    doSomething();
+                    }else{
+                    doSomethingElse();
+                    }
+
+                    // Good indentation
+                    if (condition) {
+                        doSomething();
+                    } else {
+                        doSomethingElse();
+                    }
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, proper indentation makes the structure of the code clear at a glance.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Indentation:</h3>
+            <p class="text list">
+                <b>Use consistent indentation:</b> Stick to one style, whether
+                it's spaces or tabs, and ensure consistency throughout the codebase.
+            </p>
+            <p class="text list">
+                <b>Use blank lines to separate logical blocks:</b> Break
+                up code into sections to improve readability.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">6. Avoid Long Conditionals</h3>
+            <p class="text">
+                Long and complex conditionals can make your code harder to understand.
+                Instead of nesting many conditions, consider breaking them down into simpler, smaller ones.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad (complex conditional)
+                    if (user.isActive && user.role == "admin" && user.hasPermission()) {
+                        grantAccess(user);
+                    }
+
+                    // Good (simplified conditional)
+                    bool isAdminUser = user.isActive && user.role == "admin";
+                    bool hasPermission = user.hasPermission();
+                    if (isAdminUser && hasPermission) {
+                        grantAccess(user);
+                    }
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, breaking down the complex condition into two clear variables improves readability.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Conditionals:</h3>
+            <p class="text list">
+                <b>Simplify complex conditionals:</b> Use intermediate variables to clarify complex conditions.
+            </p>
+            <p class="text list">
+                <b>Avoid deeply nested conditionals:</b> If your code contains many nested if statements, consider restructuring the logic.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">7. Handle Errors Gracefully</h3>
+            <p class="text">
+                Error handling should be done properly, ensuring that the
+                application remains stable and the user experience is not
+                disrupted. Use exceptions for unexpected errors and avoid using them for control flow.
+            </p>
+
+            <p class="example-text">Example:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <button class="copy-btn" aria-label="Copy code">Copy</button>
+                </div>
+                <pre>
+                  <code class="language-csharp">
+                    // Bad error handling (using exceptions for control flow)
+                    try {
+                        int result = 10 / divisor;
+                    } catch (DivideByZeroException) {
+                        return 0;
+                    }
+
+                    // Good error handling (handling specific exceptions)
+                    if (divisor == 0) {
+                        Console.WriteLine("Cannot divide by zero.");
+                        return 0;
+                    }
+                    int result = 10 / divisor;
+                  </code>
+                </pre>
+
+                <p class="text after-code">
+                    In the second example, we handle the error in a more structured way by checking the divisor before attempting the division.
+                </p>
+            </div>
+
+            <h3 class="small-subtitle">Guidelines for Error Handling:</h3>
+            <p class="text list">
+                <b>Use exceptions for unexpected errors:</b> Don’t use exceptions for normal control flow.
+            </p>
+            <p class="text list">
+                <b>Handle errors explicitly:</b> Check for potential errors before performing risky operations.
+            </p>
+        </div>
+
+        <div class="blog-content-element">
+            <h3 class="numbered-subtitle">8. Testing and Refactoring</h3>
+            <p class="text">
+                Testing is crucial for ensuring that your code behaves as expected. Refactoring, or improving
+                code without changing its behavior, helps make the code cleaner and more maintainable over time.
+            </p>
+
+            <h3 class="small-subtitle">Guidelines for Testing:</h3>
+            <p class="text list">
+                <b>Write unit tests:</b> Unit tests ensure that each part of your code works correctly.
+            </p>
+            <p class="text list">
+                <b>Test edge cases:</b> Make sure to test boundary conditions, invalid inputs, and unusual scenarios.
+            </p>
+
+            <h3 class="small-subtitle">Guidelines for Refactoring:</h3>
+            <p class="text list">
+                <b>Refactor regularly:</b> Continuously improve your codebase to keep it clean and maintainable.
+            </p>
+            <p class="text list">
+                <b>Don’t refactor prematurely:</b> Avoid refactoring code before it is fully functional and tested.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <h2 class="blog-subtitle">Conclusion</h2>
+
+        <div class="blog-content-element">
+            <p class="text">
+                Clean code is not just about writing code that works; it’s about writing code that is easy to maintain,
+                understand, and extend. By following the principles outlined above—such as meaningful naming, small
+                functions, and avoiding duplication—you can make your code more readable and efficient. Always remember
+                that clean code is a process of continuous improvement, and it's worth investing time in creating a
+                codebase that will serve you and your team well in the future.
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 :root {
-    --standart-text-font-size: clamp(1.05rem, 2vw, 1.05rem);
+    --standart-text-font-size: clamp(1.01rem, 2vw, 1.01rem);
+    --small-subtitle-font-size: clamp(1.05rem, 2vw, 1.05rem);
     --numbered-subtitle-font-size: clamp(1.15rem, 2vw, 1.15rem);
     --blog-content-element-padding: 10px 0 0 15px;
     --small-gap: 10px;
@@ -48,6 +49,11 @@
     margin: 5px 0 10px 0;
 }
 
+.list::before {
+    content: "• ";
+    color: var(--text-color-page);
+}
+
 .text, .example-text {
     font-size: var(--standart-text-font-size);
     padding-left: var(--middle-padding);
@@ -56,6 +62,10 @@
 .example-text {
     font-weight: bold;
     margin-bottom: -15px;
+}
+
+.small-subtitle {
+    font-size: var(--small-subtitle-font-size);
 }
 
 .special-element {
