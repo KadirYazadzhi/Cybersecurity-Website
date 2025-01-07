@@ -15,8 +15,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(35, 174, 98, 0.3); /* Тъмнина за ефект */
-    filter: blur(5px); /* Замъгляващ ефект */
+    background: rgba(35, 174, 98, 0.3);
+    filter: blur(5px);
 }
 
 .content {

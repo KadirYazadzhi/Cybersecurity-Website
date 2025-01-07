@@ -87,4 +87,17 @@
     border-radius: var(--small-border-radius);
 }
 
+@media (max-width: 768px) {
+    .main {
+        padding: 0;
+        width: 90%;
+    }
 
+    .image-container {
+        flex-direction: column;
+    }
+
+    .two-image img {
+        width: 100%;
+    }
+}

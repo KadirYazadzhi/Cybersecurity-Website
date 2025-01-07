@@ -21,3 +21,14 @@
 .blog-card {
     width: 50%;
 }
+
+@media (max-width: 768px) {
+    .other-blog-cards {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+}

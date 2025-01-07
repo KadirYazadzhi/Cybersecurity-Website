@@ -46,3 +46,9 @@ code {
 .after-code {
     margin-top: -30px;
 }
+
+@media (max-width: 768px) {
+    .code-container {
+        width: 280px;
+    }
+}

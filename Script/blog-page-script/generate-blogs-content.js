@@ -84,6 +84,7 @@ class BlogGenerator {
         }
 
         highlightCode(); // Highlight code after loading the fragment
+        setWidthForCodeElementsForPhone();
     }
 
     // Load all HTML fragments that match the active blog from localStorage

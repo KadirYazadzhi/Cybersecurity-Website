@@ -1,9 +1,11 @@
 :root {
     --course-title-font-size: clamp(3.5rem, 7vw, 3.9rem);
+    --course-title-font-size-phone: clamp(2.8rem, 7vw, 3rem);
     --course-text-font-size: clamp(1rem, 2vw, 1rem);
     --top-baner-background-color: rgba(0, 255, 116, 0.015);;
     --top-type-box-background-color: rgba(12, 17, 26, 0.8);
     --top-baner-padding: 20px 30px 50px 0;
+    --top-baner-padding-phone: 20px 0px 50px 0;
     --baner-section-top-padding: 70px;
     --small-gap: 10px;
     --medium-gap: 15px;
@@ -46,6 +48,24 @@
 
 .title {
     font-size: var(--course-title-font-size);
+}
+
+@media (max-width: 768px) {
+    .title {
+      font-size: var(--course-title-font-size-phone);
+    }
+
+    .icon-line-box {
+        flex-direction: column!important;
+    }
+
+    .text-box {
+        width: 100%!important;
+    }
+
+    .top-banner {
+        padding: var(--top-baner-padding-phone);
+    }
 }
 
 .course-description {
