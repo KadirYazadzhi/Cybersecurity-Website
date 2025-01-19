@@ -30,6 +30,11 @@
     background: var(--text-color);
     border-radius: 50%;
 }
+
+.burp {
+    width: 60px!important;
+    height: 60px!important;
+}
 @media (max-width: 800px) {
     .tool svg, .tool img {
         width: 40px;
